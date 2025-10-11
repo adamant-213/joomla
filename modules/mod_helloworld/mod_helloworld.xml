@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="5.0" client="site" method="upgrade">
+    <name>mod_helloworld</name>
+    <title>Hello World Module</title>
+    <description>A simple Hello World module for Joomla.</description>
+    <version>1.0.0</version>
+    <author>Your Name</author>
+
+    <files>
+        <filename module="mod_helloworld">mod_helloworld.php</filename>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="message"
+                    type="text"
+                    default="Hello, Joomla World!"
+                    label="Message"
+                    description="Enter a message to display on your site."
+                />
+                <field
+                    name="show_user"
+                    type="radio"
+                    label="Show Logged-in User"
+                    description="Display the logged-in user's name if available."
+                    default="1"
+                >
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+</field>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
