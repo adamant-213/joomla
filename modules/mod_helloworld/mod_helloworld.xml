@@ -17,7 +17,7 @@
                 <field
                     name="message"
                     type="text"
-                    default="Hello, Joomla World!"
+                    default="Hello, "
                     label="Message"
                     description="Enter a message to display on your site."
                 />

@@ -9,7 +9,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Helper\ModuleHelper;
 
-$message   = $params->get('message', 'Hello, Joomla World!');
+$message   = $params->get('message', 'Hello Joomla');
 $showUser  = (bool) $params->get('show_user', 1);
 
 $user = Factory::getUser(); // Get the current user
