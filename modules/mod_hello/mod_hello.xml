@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" client="site" method="upgrade">
     <name>Joomla module tutorial</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <author>me</author>
     <creationDate>today</creationDate>
     <description>Code used in the Joomla module tutorial</description>
