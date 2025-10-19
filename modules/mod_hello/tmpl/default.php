@@ -1,8 +1,17 @@
 <?php
 defined('_JEXEC') or die;
 
+$document = $this->app->getDocument();
+$wa = $document->getWebAssetManager();
+$wa->getRegistry()->addExtensionRegistryFile('mod_hello');
+$wa->useScript('mod_hello.add-suffix');
+$wa->useStyle('mod_hello.example');
+
+// Pass the suffix to add down to js
+$document->addScriptOptions('mod_hello.vars', array('suffix' => "!"));
+
 $h = $params->get('header', 'h4');
-$greeting = "<{$h}>{$hello}</{$h}>"
+$greeting = "<{$h} class='mod_hello'>{$hello}</{$h}>"
 ?>
 
 <?php echo $greeting; ?>

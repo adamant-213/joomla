@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" client="site" method="upgrade">
     <name>MOD_HELLO_NAME</name>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <author>me</author>
     <creationDate>today</creationDate>
     <description>MOD_HELLO_DESCRIPTION</description>
@@ -13,6 +13,10 @@
         <folder>language</folder>
     </files>
     <scriptfile>script.php</scriptfile>
+    <media destination="mod_hello" folder="media">
+        <filename>joomla.asset.json</filename>
+        <folder>js</folder>
+    </media>
     <config>
         <fields name="params">
             <fieldset name="basic">
