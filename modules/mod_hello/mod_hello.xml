@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" client="site" method="upgrade">
     <name>MOD_HELLO_NAME</name>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <author>me</author>
     <creationDate>today</creationDate>
     <description>MOD_HELLO_DESCRIPTION</description>
@@ -12,6 +12,7 @@
         <folder>tmpl</folder>
         <folder>language</folder>
     </files>
+    <scriptfile>script.php</scriptfile>
     <config>
         <fields name="params">
             <fieldset name="basic">
@@ -19,6 +20,7 @@
                     name="header"
                     type="list"
                     label="MOD_HELLO_HEADER_LEVEL"
+                    default="h4"
                     >
                     <option value="h3">MOD_HELLO_HEADER_LEVEL_3</option>
                     <option value="h4">MOD_HELLO_HEADER_LEVEL_4</option>
